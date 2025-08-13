@@ -1,11 +1,12 @@
 package kubernetes
 
 import (
+	"context"
 	"flag"
 	"log"
 	"os/user"
 
-	"github.com/sukeesh/k8s-job-notify/env"
+	"github.com/nuso/k8s-job-notify/env"
 
 	batchv1 "k8s.io/api/batch/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -63,7 +64,7 @@ func getConfig() (config *rest.Config, err error) {
 
 // ListJobs returns the list of Jobs
 func (c *Client) ListJobs(namespace string) (*batchv1.JobList, error) {
-	jobs, err := c.clientset.BatchV1().Jobs(namespace).List(metav1.ListOptions{})
+	jobs, err := c.clientset.BatchV1().Jobs(namespace).List(context.Background(), metav1.ListOptions{})
 	if err != nil {
 		return nil, err
 	}

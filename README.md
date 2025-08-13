@@ -1,14 +1,5 @@
 # Kubernetes Job/CronJob Notifier
 
-[![GitHub followers](https://img.shields.io/github/followers/sukeesh?label=Follow&style=social)](https://github.com/sukeesh)
-[![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fsukeesh%2Fk8s-job-notify)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fsukeesh%2Fk8s-job-notify)
-
-[![DeepSource](https://static.deepsource.io/deepsource-badge-light.svg)](https://deepsource.io/gh/sukeesh/k8s-job-notify/?ref=repository-badge)
-
-[![GoReport](https://goreportcard.com/badge/github.com/sukeesh/k8s-job-notify)](https://goreportcard.com/report/github.com/sukeesh/k8s-job-notify)
-[![Docker Pulls](https://img.shields.io/docker/pulls/sukeesh/k8s-job-notify.svg?style=flat-square&logo=docker)](https://hub.docker.com/r/sukeesh/k8s-job-notify/tags)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/sukeesh/k8s-job-notify?color=red&logo=github&style=flat-square)
-
 This tool sends an alert to slack whenever there is a [Kubernetes](https://github.com/kubernetes/kubernetes) cronJob/Job failure/success.
 
 **No extra setup** required to deploy this tool on to your cluster, just apply below K8s deploy manifest 🎉
@@ -40,12 +31,12 @@ Docker 🐳
 
 ---
 
-Docker images are hosted at [hub.docker/k8s-job-notify](https://hub.docker.com/r/sukeesh/k8s-job-notify)
+Docker images are hosted at [hub.docker/k8s-job-notify](https://hub.docker.com/r/nuso/k8s-job-notify)
 
 ## Releases
 
-- If you want to use stable releases, please use [github release tags](https://github.com/sukeesh/k8s-job-notify/releases). For example, `image: sukeesh/k8s-job-notify:1.2`
-- If you wish to use unstable, use `image: sukeesh/k8s-job-notify:beta` (triggered whenever push to `master` is made)
+- If you want to use stable releases, please use [github release tags](https://github.com/nuso/k8s-job-notify/releases). For example, `image: nuso/k8s-job-notify:1.8`
+- If you wish to use unstable, use `image: nuso/k8s-job-notify:beta` (triggered whenever push to `master` is made)
 
 ## To start using this
 
@@ -151,13 +142,10 @@ Contributions, issues and feature requests are welcome.
 
 ## Author
 
-👤 Sukeesh
-
-- Twitter: [@sukeeshbabu](https://twitter.com/sukeeshbabu)
+NUSO
 
 Please feel free to ⭐️ this repository if this project helped you! 😉
 
 ## 📝 License
 
-Copyright © 2019 Sukeesh.  
 This project is MIT licensed.
